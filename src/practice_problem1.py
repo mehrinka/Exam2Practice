@@ -40,7 +40,7 @@ def main():
     ####################################################################
 
     run_test_init()
-    # run_test_append_string()
+    run_test_append_string()
 #     run_test_double()
 #     run_test_shrink()
 #     run_test_double_then_shrink()
@@ -164,6 +164,17 @@ class Box(object):
         #    and continue working on the problem.
         # --------------------------------------------------------------
 
+        string = self.contents
+        count = 0
+        # if self.volume >= len(self.contents):
+        #     string = self.contents
+
+        for k in range(self.volume - len(self.contents)):
+            string = string + additional_contents[k]
+            count = count + 1
+            if len(additional_contents) == count:
+                return string
+
     def double(self):
         """
         What comes in:
@@ -210,6 +221,8 @@ class Box(object):
         # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
         #    ** TWO **   LINES OF CODE.
         ################################################################
+
+        return
 
     def shrink(self, new_volume):
         """
