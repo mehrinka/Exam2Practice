@@ -401,8 +401,6 @@ class Box(object):
 
         other_box.contents = self.append_string(other_box.contents)
 
-
-
     def get_history(self):
         """
         What comes in:
@@ -1055,6 +1053,7 @@ def print_failure_message(message='  *** FAILED the above test. ***',
     print(message,
           file=sys.stderr, flush=True)
     time.sleep(flush_time)
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

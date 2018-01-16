@@ -58,12 +58,12 @@ def run_test_practice_problem2a():
 
     # Test 1
     print('Expected: [6, 7, 8]')
-    print('Actual:', practice_problem2a([1,2,3], 5))
+    print('Actual:', practice_problem2a([1, 2, 3], 5))
     print()
 
     # Test 2
     print('Expected: [14, 17, 88, 14]')
-    print('Actual:', practice_problem2a([2,5,76,2], 12))
+    print('Actual:', practice_problem2a([2, 5, 76, 2], 12))
     print()
 
     # Test 3
